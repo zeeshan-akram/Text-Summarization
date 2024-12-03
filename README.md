@@ -30,15 +30,15 @@ environment.yaml            # Conda environment definition file
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/zeeshan-akram/Text-Summarization.git
+cd Text-Summarization
 ```
 
 ### 2. Create a Conda Environment
 Create a Conda environment using the `environment.yaml` file included in the repository:
 ```bash
 conda env create -f environment.yaml
-conda activate summarization_env
+conda activate nlp
 ```
 
 ## Running the Application
