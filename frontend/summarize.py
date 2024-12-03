@@ -17,7 +17,11 @@ def get_summarization(Article, username, password):
 
 summarize_interface = gr.Interface(
     fn=get_summarization,
-    inputs=["text", "text", "text"],
+    inputs=[
+        gr.Textbox(label="Article", placeholder="Enter the article text here"),
+        gr.Textbox(label="Username", placeholder="Enter your username"),
+        gr.Textbox(label="Password", type="password", placeholder="Enter your password")
+    ],
     outputs=["text"],
     allow_flagging="never"
 )
