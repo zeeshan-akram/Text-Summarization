@@ -46,6 +46,8 @@ conda activate nlp
 ### 1. Start the FastAPI Backend
 The FastAPI backend handles summarization requests. It uses the Hugging Face Transformers library and the Google T5-small model for summarization. To start the server, navigate to the `backend` directory and run:
 ```bash
+python app.py
+or
 uvicorn app:app --host 0.0.0.0 --port 8088
 ```
 - Replace `app:app` with the path to your FastAPI app if necessary.
@@ -67,6 +69,8 @@ This launches the Gradio interface in your web browser. You can interact with th
 ## Example
 1. Start the backend:
    ```bash
+   python app.py
+   or
    uvicorn app:app --host 0.0.0.0 --port 8088
    ```
 2. Start the Gradio app:
